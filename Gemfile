@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 
 gem "rails", "~> 7.0.7", ">= 7.0.7.2"
+gem "bcrypt"
+gem "bootstrap-sass", "3.4.1"
 gem "sassc-rails"
 gem "sprockets-rails"
 gem "importmap-rails"
@@ -28,6 +30,7 @@ group :test do
   gem "webdrivers"
   gem "rails-controller-testing"
   gem "minitest"
+  gem "minitest-reporters"
   gem "guard"
   gem "guard-minitest"
 end
